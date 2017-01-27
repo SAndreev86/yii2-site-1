@@ -16,12 +16,13 @@ class Window extends Model
 {
     public $name;
     public $description;
+    public $category;
     public $image;
 
     public function rules()
     {
         return [
-            [['name', 'description', ], 'required', message => 'Заполните поле'],
+            [['name', 'description', 'category', ], 'required', message => 'Заполните поле'],
             [['image'], 'file',  'extensions' => 'jpg, png, gif' ],
         ];
     }
@@ -33,6 +34,7 @@ class Window extends Model
 
         $action->name = $model->name;
         $action->description = $model->description;
+        $action->category = $model->category;
         $action->save();
 
         if($model->image != '') {

@@ -78,12 +78,12 @@ AppAsset::register($this);
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/windows">Окна и балконные рамы</a></li>
-                                <li><a href="/doors">двери стальные Аргус</a></li>
+                                <li><a href="/doors">Двери стальные Аргус</a></li>
                                 <li><a href="/entrances">Входные группы и витражи</a></li>
                             </ul>
                         </li>
-                        <li><a href="dealers">Дилерам</a></li>
-                        <li><a href="contacts">Контакты</a></li>
+                        <li><a href="/dealers">Дилерам</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,7 +117,7 @@ AppAsset::register($this);
                     <h3><span>Частным лицам</span></h3>
                     <ul>
                         <li><a href="/windows">Окна и балконные рамы</a></li>
-                        <li><a href="/doors">двери стальные Аргус</a></li>
+                        <li><a href="/doors">Двери стальные Аргус</a></li>
                         <li><a href="/entrances">Входные группы и витражи</a></li>
                     </ul>
                 </div>

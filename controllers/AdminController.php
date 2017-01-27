@@ -205,10 +205,13 @@ class AdminController extends Controller
         if(Yii::$app->request->get('action') == 'window') {
 
             $action = Windows::findOne(Yii::$app->request->get('id'));
-            if($action->image != 'images/goods/noimage.png') {
-                unlink($action->image);
+
+            if($action->category != 'rehau') {
+                if($action->image != 'images/goods/noimage.png') {
+                    unlink($action->image);
+                }
+                $action->delete();
             }
-            $action->delete();
 
             $this->redirect('/admin/windows');
 

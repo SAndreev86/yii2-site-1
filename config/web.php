@@ -49,6 +49,9 @@ $config = [
             'admin/<action>/<id:\d+>' => 'admin/view',
             'admin/<action>' => 'admin/<action>',
             'admin' => 'admin/index',
+            'windows/<category>' => 'site/windowscategory',
+            'window/<id:\d+>' => 'site/windowsone',
+
             '<action>' => 'site/<action>',
 
             ],

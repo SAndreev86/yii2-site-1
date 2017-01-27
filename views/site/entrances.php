@@ -17,11 +17,11 @@ $this->registerMetaTag([
                     Список товаров в нашем магазине:
                 </div>
                 <div class="list-group">
-                    <a href="windows" class="list-group-item">Окна и балконные рамы <span
+                    <a href="/windows" class="list-group-item">Окна и балконные рамы <span
                                 class="badge"><?= $categories['Окна'] ?></span></a>
-                    <a href="entrances" class="list-group-item">Входные группы и витражи <span
+                    <a href="/entrances" class="list-group-item">Входные группы и витражи <span
                                 class="badge"><?= $categories['Витражи'] ?></span></a>
-                    <a href="doors" class="list-group-item">Двери <span
+                    <a href="/doors" class="list-group-item">Двери <span
                                 class="badge"><?= $categories['Двери'] ?></span></a>
                 </div>
             </div>

@@ -46,7 +46,7 @@ $this->registerMetaTag([
                     <div class="row">
                         <div class="col-xs-12 text-center">
                             <div class="contact-heading">
-                                <h2>двери стальные Аргус</h2>
+                                <h2>Двери стальные Аргус</h2>
                             </div>
                         </div>
                         <p>Широкий выбор дверей от известного производителя</p>

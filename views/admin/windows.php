@@ -23,15 +23,15 @@ use yii\widgets\ActiveForm;
                                 <a href="<?= 'window/' . $window->id ?>"><h4><?= $window->name ?></h4></a></div>
                         </div>
                         <div class="col-md-1 col-sm-1 col-xs-1">
+                            <?php if ($window->category != 'rehau'): ?>
+
                             <a href="<?= '/admin/window/' . $window->id ?>/delete" class="btn btn-default btn-sm"><i
                                         class="glyphicon glyphicon-remove fa-lg"></i></a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
-
-
-
         </div>
     </div>
 </div>
