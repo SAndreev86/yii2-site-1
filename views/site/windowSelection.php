@@ -20,20 +20,61 @@ $this->registerMetaTag([
                             Список товаров в нашем магазине:
                         </div>
                         <div class="list-group">
-                            <a href="/windows" class="list-group-item" >Окна и
+                            <a href="/windows" class="list-group-item">Окна и
                                 балконные рамы <span
-                                    class="badge"><?= $categories['Окна'] ?></span></a>
+                                        class="badge"><?= $categories['Окна'] ?></span></a>
                             <a href="/entrances" class="list-group-item">Входные группы и витражи <span
-                                    class="badge"><?= $categories['Витражи'] ?></span></a>
+                                        class="badge"><?= $categories['Витражи'] ?></span></a>
                             <a href="/doors" class="list-group-item">Двери <span
-                                    class="badge"><?= $categories['Двери'] ?></span></a>
+                                        class="badge"><?= $categories['Двери'] ?></span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <a href="/windows/rehau">Rehau</a>
-                    <a href="/windows/brusbox">Brusbox</a>
-                    <a href="/windows/sliding_systems">Раздвижные системы</a>
+
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 col-xs-12">
+                                <a href="/windows/brusbox">
+                                    <h3 class="font_h3">
+                                        Рациональный выбор
+                                    </h3>
+                                    <div class="line_r "></div>
+                                    <div class="brus"><img src="/images/windows/brusbox.jpg" class=" center-block"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-0 col-xs-0"></div>
+
+                            <div class="col-md-5 col-sm-12 col-xs-12">
+
+                                <a href="/windows/rehau">
+
+                                    <h3 class="font_h3">
+                                        Тепло и тишина как минимум 50 лет!
+                                    </h3>
+                                    <div class="line_r "></div>
+                                    <div class="brus2"><img src="/images/windows/rehau.jpg" class=" center-block"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 brus4">
+
+                                <a href="/windows/sliding_systems">
+
+                                    <h3 class="font_h3">
+                                        Раздвижные системы
+                                    </h3>
+                                    <div class="line_r "></div>
+
+                                    <div class="brus3 ">
+                                        <img src="/images/windows/provedal.jpg" class=" center-block">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-0 col-xs-0"></div>
+                        </div>
+
                 </div>
             </div>
         </div>
