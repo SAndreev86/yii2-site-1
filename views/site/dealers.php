@@ -11,11 +11,11 @@ $this->registerMetaTag([
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-8">
             <!--contact-->
             <div id="contact">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-md-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="contact-heading">
                             <img src="images/main/diler.jpg" alt="Дилерам" class="img-rounded">
                             <h2>Дилерам</h2>
@@ -62,7 +62,7 @@ $this->registerMetaTag([
 
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="contact-heading">
                             <h3>ТАКЖЕ СВОИМ ДИЛЕРАМ МЫ ПРЕДЛАГАЕМ:</h3>
                             <div class="text-left icon_text "><span

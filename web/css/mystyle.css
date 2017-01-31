@@ -252,6 +252,9 @@ a:hover {
 		top: -5px; /* Расстояние от верхнего края */
 		left: 470px;
 	}
+	.brand_div {
+		margin-left: -50px;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -259,7 +262,7 @@ a:hover {
 		position: absolute;
 		overflow: auto;
 		top: -5px; /* Расстояние от верхнего края */
-		left: 270px;
+		left: 235px;
 	}
 	.mail_one {
 		position: absolute;
@@ -278,7 +281,7 @@ a:hover {
 	.mail_one {
 		position: absolute;
 		overflow: auto;
-		top: -25px; /* Расстояние от верхнего края */
+		top: -35px; /* Расстояние от верхнего края */
 		left: 850px;
 	}
 }

@@ -70,6 +70,7 @@ AppAsset::register($this);
                         </li>
                         <li><a href="/dealers">Дилерам</a></li>
                         <li><a href="/contacts">Контакты</a></li>
+                        <li><a href=/certificates">О компании</a></li>
                     </ul>
                 </div>
             </div>
