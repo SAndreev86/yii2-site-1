@@ -23,22 +23,20 @@ $(document).ready(function() {
 			top: $('header').height()
 		}
 	});
-    $("#main-nav").on('affixed.bs.affix', function(){
+   /* $("#main-nav").on('affixed.bs.affix', function(){
 		if($(window).width() >= 750) {
             $('.container_affix').append('<div class="phone_one remove_div"><div><strong>Тел:</strong>&nbsp;8-967-774-5341</div><div >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8-967-774-5381</div></div>');
             $('.container_affix').append('<div class="mail_one remove_div"><div><strong>Почта:</strong>&nbsp;vremya-okon@mail.ru</div></div>');
         }
 
-    });
-    $("#main-nav").on('affixed-top.bs.affix', function(){
-        $("div.remove_div").remove();
-    });
+    });*/
+
 
 
     $(window).load(function(){
-        if ( $("div").is(".affix") && $(window).width() >= 750 ) {
-            $('.container_affix').append('<div class="phone_one remove_div"><div><strong>Тел:</strong>&nbsp;8-967-774-5341</div><div >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8-967-774-5381</div></div>');
-            $('.container_affix').append('<div class="mail_one remove_div"><div><strong>Почта:</strong>&nbsp;vremya-okon@mail.ru</div></div>');        }
+        if ( $(window).width() >= 750 ) {
+            $('.container_affix').append('<div class="phone_one remove_div"><div>&nbsp;8-967-774-5341</div><div >&nbsp;8-967-774-5381</div></div>');
+            $('.container_affix').append('<div class="mail_one remove_div"><div>&nbsp;vremya_okon@mail.ru</div></div>');        }
     });
 
 

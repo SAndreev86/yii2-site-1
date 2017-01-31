@@ -90,6 +90,19 @@ body {
 	margin-bottom: 4px;
 	border: 1px solid #c1b2b2;
 }
+.brus {
+	position:relative;
+	margin-bottom: 20px;
+}
+.brus2 {
+	margin-bottom: 20px;
+	position:relative;
+}
+.brus3 {
+	margin-bottom: 20px;
+	position:relative;
+}
+
 @media screen and (max-width: 960px) {
 	.feedback {
 		margin-top: 40px;
@@ -115,8 +128,14 @@ body {
 	margin-bottom: -20px;
 }
 .panel {
-	margin-top: 20px;
+	margin-top: 50px;
 }
+.border_menu {
+	border: 2px solid #D20062;
+	border-radius: 5px;
+}
+
+
 #contact {
 	margin-top: 0px;
 }
@@ -157,11 +176,28 @@ body {
 		margin-top: -70px;
 	}
 }
+.remove_div {
+	font-size: 150%; /* Размер текста */
+	font-weight: lighter;
+}
 .affix > .navbar {
 	padding-top: 20px;
 }
+.backgr {
+	background-color: rgba(245, 245, 245, 0.71);
+	height: 40px;
+	position:absolute;top:0px;left:0px;
+}
+@media screen and (max-width: 750px){
+	.backgr {
+		height: 60px;
+	}
+}
 #main-nav {
 	padding-bottom: 10px;
+}
+#main-nav.affix-top {
+	padding-top: 40px;
 }
 .brand_div {
 	background-image: url(../images/brand.png);
@@ -175,7 +211,7 @@ textarea:focus {
 
 .phone_one, .mail_one {
 
-	color: #000000;
+	color: #333;
 }
 @media screen and (max-width: 750px) {
 	.affix > .navbar {
@@ -188,6 +224,21 @@ textarea:focus {
 	}
 }
 
+a {
+	color: #D20062;
+}
+a:hover {
+	color: #333;
+}
+.img-circle:hover{
+	box-shadow: inset 0px 0px 10px #000;
+}
+
+.list_our > li {
+	color: #333;
+	font-style: italic;
+	font-size: 130%; /* Размер текста */
+}
 @media screen and (min-width: 750px) {
 	.phone_one {
 		position: absolute;
@@ -202,6 +253,7 @@ textarea:focus {
 		left: 470px;
 	}
 }
+
 @media screen and (min-width: 992px) {
 	.phone_one {
 		position: absolute;
@@ -220,7 +272,7 @@ textarea:focus {
 	.phone_one {
 		position: absolute;
 		overflow: auto;
-		top: 2px; /* Расстояние от верхнего края */
+		top: -20px; /* Расстояние от верхнего края */
 		left: 270px;
 	}
 	.mail_one {
@@ -242,7 +294,9 @@ textarea:focus {
 	margin-bottom: 30px;
 }
 .font_h3 {
+	border-color: #000000;
 	margin-top: 5px;
+	margin-bottom: 5px;
 	font-weight: lighter;
 	font-family: 'HelveticaNeueW47LtCn',Arial,sans-serif;
 	letter-spacing: .5px;

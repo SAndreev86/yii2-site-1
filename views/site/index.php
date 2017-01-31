@@ -15,13 +15,13 @@ $this->registerMetaTag([
                 <div id="slider" class="flexslider">
                     <ul class="slides">
                         <li>
-                            <img src="images/slider/slider1.jpg">
+                            <img src="images/slider/1.jpg">
                         </li>
                         <li>
-                            <img src="images/slider/slider2.jpg">
+                            <img src="images/slider/2.jpg">
                         </li>
                         <li>
-                            <img src="images/slider/slider3.jpg">
+                            <img src="images/slider/3.jpg">
                         </li>
                     </ul>
                 </div>
@@ -36,7 +36,6 @@ $this->registerMetaTag([
                                 <h2>Окна и балконные рамы</h2>
                             </div>
                         </div>
-                        <p>Оптимальное сочетание цены и качества в наших товарах</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -49,7 +48,6 @@ $this->registerMetaTag([
                                 <h2>Двери стальные Аргус</h2>
                             </div>
                         </div>
-                        <p>Широкий выбор дверей от известного производителя</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -62,40 +60,54 @@ $this->registerMetaTag([
                                 <h2>Входные группы и витражи</h2>
                             </div>
                         </div>
-                        <p>Выгодные условия доставки и установки</p>
                     </div>
                 </div>
 
             </div>
-            <div class="news"><h4></h4>
-            </div>
+            <div class="news"></div>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-12">
-                    <img src="images/main/news1.jpg" alt="Самые надежные окна" class="img-rounded">
-                    <h4 class="text-left">Самые надежные окна</h4>
-                    <p>Внимательное отношение к каждому клиенту! Воплощаем в жизнь любые Ваши идеи и мечты!</p>
+                    
+                    <h4 class="text-left">Почему выбирают нас?</h4>
+                    <ul class="list_our">
+                        <li>- опыт нашей работы более 10 лет</li>
+                        <li>- предварительный расчет заказа on-line</li>
+                        <li>- бесплатный выезд замерщика</li>
+                        <li>- оформление договора на дому</li>
+                        <li>- разные виды оплаты заказа</li>
+                        <li>- заводская гарантия качества от производителя</li>
+                        <li>- все изделия изготавливаются по индивидуальным<br/> размерам и пожеланиям клиента</li>
+                        <li>- гарантийоное обслуживание в течении 5 лет!</li>
+                    </ul>
                 </div>
                 <div class="col-md-1 col-sm-1 col-xs-0"></div>
                 <div class="col-md-5 col-sm-5 col-xs-12">
-                    <img src="images/main/news2.jpg" alt="ВРЕМЯОКОН" class="img-rounded">
-                    <h4 class="text-left">#ВРЕМЯОКОН</h4>
-                    <p>Передовые технологии и современные материалы на службе Вашего комфорта!</p>
+                    <h4 class="text-left">Этапы работы:</h4>
+                    <ul class="list_our">
+                        <li>- предварительный расчет</li>
+                        <li>- замер</li>
+                        <li>- составление точной сметы заказа</li>
+                        <li>- согласование и подписание договора</li>
+                        <li>- изготовление изделий по индивидуальным размерам</li>
+                        <li>- монтаж в удобное для вас время</li>
+                    </ul>
                 </div>
                 <div class="news2"></div>
             </div>
+            <div class="news"></div>
             <div class="rowpad row"></div>
             <div class="row">
-                <div class="col-md-5 col-sm-5 col-xs-12">
-                    <img src="images/main/news3.jpg" alt="Окна REHAU" class="img-rounded">
-                    <h4 class="text-left">Окна REHAU. Тишина и покой минимум 50 лет!</h4>
-                    <p>Заводские качественные окна плюс профессиональный монтаж-простая формула Вашего спокойствия!</p>
-                </div>
+                <a href="/dealers">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <h4 class="text-left">Наши партнеры</h4>
+                    </div>
+                </a>
                 <div class="col-md-1 col-sm-1 col-xs-0"></div>
-                <div class="col-md-5 col-sm-5 col-xs-12">
-                    <img src="images/main/news4.png" alt="Качество" class="img-rounded">
-                    <h4 class="text-left">Качество вызывает уважение</h4>
-                    <p> Ваше спокойствие и уют - наша работа!</p>
-                </div>
+                <a href="/certificates">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <h4 class="text-left">Сертификаты</h4>
+                    </div>
+                </a>
                 <div class="news2"></div>
             </div>
         </div>

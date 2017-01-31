@@ -16,18 +16,11 @@ $this->registerMetaTag([
             <div class="row">
                 <div class="col-md-3">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><a class="title11" href="#">Частным лицам</a></div>
-                        <div class="panel-body">
-                            Список товаров в нашем магазине:
-                        </div>
                         <div class="list-group">
                             <a href="/windows" class="list-group-item" >Окна и
-                                    балконные рамы <span
-                                            class="badge"><?= $categories['Окна'] ?></span></a>
-                            <a href="/entrances" class="list-group-item">Входные группы и витражи <span
-                                        class="badge"><?= $categories['Витражи'] ?></span></a>
-                            <a href="/doors" class="list-group-item">Двери <span
-                                        class="badge"><?= $categories['Двери'] ?></span></a>
+                                    балконные рамы</a>
+                            <a href="/entrances" class="list-group-item">Входные группы и витраж</a>
+                            <a href="/doors" class="list-group-item">Двери</a>
                         </div>
                     </div>
                 </div>

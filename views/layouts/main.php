@@ -35,23 +35,9 @@ AppAsset::register($this);
                 <div class=".col-lg-8 col-md-8 col-sm-6">
                 </div>
                 <div class=".col-lg-2 col-md-2 col-sm-3">
-                    <div class="top-left fa_header">
-                        <ul>
-                            <li><a href="https://www.facebook.com/vremyaokon/"><i class="fa fa-facebook fa-lg"
-                                                                                  aria-hidden="true"></i></a></li>
-                            <li><a href="http://ok.ru/group/55254412296221"><i class="fa fa-odnoklassniki fa-lg"
-                                                                               aria-hidden="true"></i></a></li>
-                            <li><a href="https://vk.com/vremya_okon"><i class="fa fa-vk fa-lg"
-                                                                        aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.instagram.com/vremya_okon/"><i class="fa fa-instagram fa-lg"
-                                                                                    aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+                    <div class="top-left fa_header"></div>
                 </div>
-                <div class=".col-lg-2 col-md-2 col-sm-3">
-                    <div><strong>Тел:</strong>&nbsp;8-967-774-5341</div>
-                    <div class="pad_not">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8-967-774-5381</div>
-                </div>
+                <div class=".col-lg-2 col-md-2 col-sm-3"></div>
             </div>
         </div>
     </section>
@@ -74,7 +60,7 @@ AppAsset::register($this);
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="/">Главная</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Частным лицам<b
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Клиентам<b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/windows">Окна и балконные рамы</a></li>
@@ -114,7 +100,7 @@ AppAsset::register($this);
             </div>
             <div class="col-md-4">
                 <div class="footer-heading">
-                    <h3><span>Частным лицам</span></h3>
+                    <h3><span>Клиентам</span></h3>
                     <ul>
                         <li><a href="/windows">Окна и балконные рамы</a></li>
                         <li><a href="/doors">Двери стальные Аргус</a></li>
