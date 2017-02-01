@@ -41,6 +41,11 @@ class SiteController extends Controller
         return $this->render('window', ['window' => $window, 'categories' => $this->categories()]);
     }
 
+    public function actionCertificates()
+    {
+        return $this->render('certificates', [ 'categories' => $this->categories()]);
+    }
+
     public function actionWindowscategory()
     {
         $windowCategory = '';

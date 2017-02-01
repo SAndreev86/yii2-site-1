@@ -103,7 +103,7 @@ $this->registerMetaTag([
                     </div>
                 </a>
                 <div class="col-md-1 col-sm-1 col-xs-0"></div>
-                <a href="/certificates">
+                <a href="/certificates"
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <h4 class="text-left">Сертификаты</h4>
                     </div>
