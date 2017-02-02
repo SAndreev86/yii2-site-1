@@ -8,6 +8,8 @@ $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Дилерам дилеры Время Окон ассортимент конструкций окна Rehau Brusbox Provedal VHS MACO Татпроф',
 ]);
+
+$files = new Yii::$app->slid;
 ?>
 <div class="container">
     <div class="row">
@@ -29,10 +31,12 @@ $this->registerMetaTag([
                                 надежная постоянно развивающаяся организация, поставляющая продукцию высокого
                                 качества.</p>
                             <div class="row">
-                                <div class="col-xs-3 col-sm-1 col-md-1 icon_text vcenter "><span
+                                <div class="col-xs-3 col-sm-2 col-md-1 icon_text vcenter "><span
                                             class=" fa-3x glyphicon glyphicon-ok"></span></div><!--
-											--><div class="col-xs-9 col-sm-11 col-md-11 icon_text text-left vcenter border_div">При
-                                    работе с дилерами мы использовали собственный накопленный опыт партнерства с крупными
+											-->
+                                <div class="col-xs-8 col-sm-9 col-md-10 icon_text text-left vcenter border_div">При
+                                    работе с дилерами мы использовали собственный накопленный опыт партнерства с
+                                    крупными
                                     производителями. Именно поэтому, мы лучше остальных знаем все нюансы при работе с
                                     дилерами. И готовы предложить весь необходимый спектр продукции и услуг, как для
                                     крупных, так и для начинающих организаций занимающихся установкой ПВХ окон.
@@ -47,9 +51,10 @@ $this->registerMetaTag([
                                 удобное для Вас время. </p>
 
                             <div class="row">
-                                <div class="col-xs-3 col-sm-1 col-md-1 icon_text vcenter "><span
+                                <div class="col-xs-3 col-sm-2 col-md-1 icon_text vcenter "><span
                                             class=" fa-3x glyphicon glyphicon-stats"></span></div><!--
-											--><div class="col-xs-9 col-sm-11 col-md-11 icon_text text-left vcenter border_div">Мы
+											-->
+                                <div class="col-xs-8 col-sm-9 col-md-10 icon_text text-left vcenter border_div">Мы
                                     успешно работаем с дилерами, а потому отлично знаем все нюансы этой работы. Мы
                                     готовы поддержать, укрепить и развить ваш бизнес, не зависимо от объемов.
                                 </div>
@@ -90,7 +95,8 @@ $this->registerMetaTag([
                                 методических рекламных материалов;
                             </div>
                             <div class="text-left icon_text"><span
-                                        class="fa-2x glyphicon glyphicon-education vcenter"></span>&nbsp;&nbsp;&nbsp;&nbsp;Обучение персонала.
+                                        class="fa-2x glyphicon glyphicon-education vcenter"></span>&nbsp;&nbsp;&nbsp;&nbsp;Обучение
+                                персонала.
                             </div>
                         </div>
                     </div>
@@ -107,31 +113,62 @@ $this->registerMetaTag([
 <div id="client">
     <div class="container">
 
-        <div class="row">
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client1.jpg" alt="Rehau">
-            </div>
+        <div class="row dealers_bagr">
+            <div class="col-md-12 col-sm-12">
+                <h3 class="text-center">- НАШИ ПАРТНЕРЫ И ДРУЗЬЯ -</h3><br/><br/><br/>
+                <div class="line_r "></div>
 
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client2.jpg" alt="Brusbox">
-            </div>
+                <div class="slider-nav">
+                    <?php foreach ($files->readFiles("images/slider/client") as $file): ?>
+                        <div><img src="images/slider/client/<?= $file ?>.jpg" alt="Окно" id="modal_<?= $file ?>"
+                                  class="img-thumbnail center-block img-responsive "></div>
+                    <?php endforeach; ?>
+                </div>
 
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client3.png" alt="Provedal">
-            </div>
+                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                <script type="text/javascript" src="slick/slick.min.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('.slider-nav').slick({
 
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client4.gif" alt="VHS">
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            dots: true,
+                            speed: 300,
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 3,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                }
+                                // You can unslick at a given breakpoint now by adding:
+                                // settings: "unslick"
+                                // instead of a settings object
+                            ]
+                        });
+                    });
+                </script>
             </div>
-
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client5.png" alt="MACO">
-            </div>
-
-            <div class="col-sm-4 col-md-2">
-                <span></span><img src="images/client/client6.jpg" alt="Татпроф">
-            </div>
-
         </div>
     </div>
 </div>

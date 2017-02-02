@@ -7,22 +7,20 @@ $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'Окно надежные окна ПВХ ВРЕМЯОКОН работа REHAU материалы качественные Широкий выбор',
 ]);
+
+$files = new Yii::$app->slid;
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-9 slider_pad">
+        <div class="col-md-9 col-sm-8 slider_pad">
             <div class="row row_pad_bottom">
                 <div id="slider" class="flexslider">
                     <ul class="slides">
+                        <?php foreach ($files->readFiles("images/slider/ivent") as $file): ?>
                         <li>
-                            <img src="images/slider/1.jpg">
+                            <img src="images/slider/ivent/<?= $file ?>.jpg">
                         </li>
-                        <li>
-                            <img src="images/slider/2.jpg">
-                        </li>
-                        <li>
-                            <img src="images/slider/3.jpg">
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
@@ -110,7 +108,7 @@ $this->registerMetaTag([
                 </a>
                 <div class="news2"></div>
             </div>
+            <? include 'menu.php'; ?>
         </div>
-        <? include 'menu.php'; ?>
     </div>
 </div>

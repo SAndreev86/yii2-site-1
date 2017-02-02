@@ -1,7 +1,7 @@
 <?php ?>
 
 
-<div class="col-md-3  col-sm-3 feedback">
+<div class="col-md-3 col-sm-3 feedback">
     <div class="row">
         <!--contact form-->
         <div id="get-touch">

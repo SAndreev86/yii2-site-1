@@ -22,7 +22,10 @@ class AppAsset extends AssetBundle
 	"css/bootstrap.min.css",
 	"css/font-awesome.min.css",
 	"css/style.css",
-	"css/mystyle.css",
+    "slick/slick-theme.css",
+    "slick/slick.css",
+    "css/mystyle.css",
+    "css/font-awesome/css/font-awesome.min.css",
     ];
     public $js = [
     	"js/script.js",
