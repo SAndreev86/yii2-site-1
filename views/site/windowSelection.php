@@ -43,9 +43,9 @@ $this->registerMetaTag([
 
                                 <a href="/windows/rehau">
                                     <div class="brus2">
-                                        <div class="backgr">
+                                        <div class="rehau_backgr">
                                             <h3 class="font_h3">
-                                                Тепло и тишина как минимум 50 лет!
+                                                Тишина и тепло <br/>минимум 50 лет!
                                             </h3>
                                         </div>
                                         <img src="/images/windows/rehau.jpg" class=" center-block">

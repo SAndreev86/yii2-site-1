@@ -208,9 +208,14 @@ body {
 	height: 40px;
 	position:absolute;top:0px;left:0px;
 }
+.rehau_backgr {
+	background-color: rgba(245, 245, 245, 0.71);
+	height: 60px;
+	position:absolute;top:0px;left:0px;
+}
 @media screen and (max-width: 750px){
 	.backgr {
-		height: 60px;
+		height: 40px;
 	}
 }
 #main-nav {
@@ -280,6 +285,7 @@ a:hover {
 		top: -5px; /* Расстояние от верхнего края */
 		left: 270px;
 	}
+
 	.mail_one {
 		position: absolute;
 		overflow: auto;
@@ -292,6 +298,16 @@ a:hover {
 }
 .color_icon {
 	color: #333;
+}
+.img_dealers {
+	height: 100px;
+	vertical-align: middle;
+	width: 80%;
+	margin-left: auto;
+	max-height: 100px;
+}
+.row_height {
+	height: 100px;
 }
 .icon_bt {
 	box-shadow: 0 0 7px #666666;

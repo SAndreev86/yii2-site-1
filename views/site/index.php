@@ -65,7 +65,7 @@ $files = new Yii::$app->slid;
             <div class="news"></div>
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-12">
-                    
+
                     <h4 class="text-left">Почему выбирают нас?</h4>
                     <ul class="list_our">
                         <li>- опыт нашей работы более 10 лет</li>
@@ -94,20 +94,151 @@ $files = new Yii::$app->slid;
             </div>
             <div class="news"></div>
             <div class="rowpad row"></div>
-            <div class="row">
-                <a href="/dealers">
+            <div class="row ">
+
                     <div class="col-md-5 col-sm-5 col-xs-12">
-                        <h4 class="text-left">Наши партнеры</h4>
+                        <h4 class="text-center">Наши партнеры</h4>
+                        <div class="slider-dealers">
+                            <?php foreach ($files->readFiles("images/slider/client") as $file): ?>
+                                <div><img src="images/slider/client/<?= $file ?>.jpg" alt="Окно" id="modal_<?= $file ?>"
+                                          class="img-thumbnail center-block img-responsive img_dealers"></div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                        <script type="text/javascript" src="slick/slick.min.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('.slider-dealers').slick({
+
+                                    autoplay: true,
+                                    autoplaySpeed: 2000,
+                                    dots: true,
+                                    speed: 300,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    responsive: [
+                                        {
+                                            breakpoint: 1024,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1,
+                                                infinite: true,
+                                                dots: true
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 600,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 480,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1
+                                            }
+                                        }
+                                        // You can unslick at a given breakpoint now by adding:
+                                        // settings: "unslick"
+                                        // instead of a settings object
+                                    ]
+                                });
+                            });
+                        </script>
                     </div>
-                </a>
                 <div class="col-md-1 col-sm-1 col-xs-0"></div>
-                <a href="/certificates"
-                    <div class="col-md-5 col-sm-5 col-xs-12">
-                        <h4 class="text-left">Сертификаты</h4>
+
+                    <div class="col-md-5 col-sm-5 col-xs-12 ">
+                        <h4 class="text-center">Сертификаты</h4>
+
+
+                        <div class="slider-index ">
+                            <?php foreach ($files->readFiles("images/slider/certificates") as $file): ?>
+                                <div><img src="images/slider/certificates/<?=$file?>.jpg" alt="Окно" id="modal_<?=$file?>"
+                                          class="img-thumbnail center-block img-responsive " onclick="modalShow();" ></div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                        <script type="text/javascript" src="slick/slick.min.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $('.slider-index').slick({
+
+                                    autoplay: true,
+                                    autoplaySpeed: 3000,
+                                    dots: true,
+                                    speed: 300,
+                                    slidesToShow: 4,
+                                    slidesToScroll: 4,
+                                    responsive: [
+                                        {
+                                            breakpoint: 1024,
+                                            settings: {
+                                                slidesToShow: 2,
+                                                slidesToScroll: 2,
+                                                infinite: true,
+                                                dots: true
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 600,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 480,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1
+                                            }
+                                        }
+                                        // You can unslick at a given breakpoint now by adding:
+                                        // settings: "unslick"
+                                        // instead of a settings object
+                                    ]
+                                });
+                            });
+                        </script>
+
+
+                        <!-- HTML-код модального окна -->
+                        <div id="myModalBox" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Заголовок модального окна -->
+                                    <!-- Основное содержимое модального окна -->
+                                    <div class="modal-body">
+                                        Содержимое модального окна...
+                                    </div>
+                                    <!-- Футер модального окна -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Скрипт, вызывающий модальное окно после загрузки страницы -->
+                        <script>
+                            function modalShow() {
+
+                                var e = window.event;
+                                var obj = e.target||e.srcElement;
+                                $(".modal-body").html($("#"+obj.id).clone());
+                                $("#myModalBox").modal('show');
+                            };
+                        </script>
+
+
+
                     </div>
-                </a>
+
                 <div class="news2"></div>
             </div>
+        </div>
             <? include 'menu.php'; ?>
         </div>
     </div>
