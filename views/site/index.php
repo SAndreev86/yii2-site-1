@@ -63,35 +63,50 @@ $files = new Yii::$app->slid;
 
             </div>
             <div class="news"></div>
-            <div class="row">
-                <div class="col-md-5 col-sm-5 col-xs-12">
+            <div class="row text-algn">
+            	<div class="row row_pad_bottom">
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                <i class="fa fa-clock-o fa-4x color_icon"></i>
+	                <h3>Изготовление от 5 дней</h3>
+	                Установка окон займет так же немного времени - всего один день.
+	                </div>
 
-                    <h4 class="text-left">Почему выбирают нас?</h4>
-                    <ul class="list_our">
-                        <li>- опыт нашей работы более 10 лет</li>
-                        <li>- предварительный расчет заказа on-line</li>
-                        <li>- бесплатный выезд замерщика</li>
-                        <li>- оформление договора на дому</li>
-                        <li>- разные виды оплаты заказа</li>
-                        <li>- заводская гарантия качества от производителя</li>
-                        <li>- все изделия изготавливаются по индивидуальным<br/> размерам и пожеланиям клиента</li>
-                        <li>- гарантийоное обслуживание в течении 5 лет!</li>
-                    </ul>
-                </div>
-                <div class="col-md-1 col-sm-1 col-xs-0"></div>
-                <div class="col-md-5 col-sm-5 col-xs-12">
-                    <h4 class="text-left">Этапы работы:</h4>
-                    <ul class="list_our">
-                        <li>- предварительный расчет</li>
-                        <li>- замер</li>
-                        <li>- составление точной сметы заказа</li>
-                        <li>- согласование и подписание договора</li>
-                        <li>- изготовление изделий по индивидуальным размерам</li>
-                        <li>- монтаж в удобное для вас время</li>
-                    </ul>
-                </div>
-                <div class="news2"></div>
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                	<i class="fa fa-truck fa-4x color_icon"></i>
+	                	 <h3>Бесплатный замер</h3>
+	               		 Профессиональный замерщик выполнит все замеры совершенно бесплатно.
+	                </div>
+
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                	<i class="fa fa-check fa-4x color_icon"></i>
+	                    <h3>Качественный монтаж</h3>
+	               		 Бригада профессиональных мастеров аккуратно и быстро выполнит все работы.
+	                </div>
+	                <div class="news2"></div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                	<i class="fa fa-thumbs-up fa-4x color_icon"></i>
+		                <h3>Гарантия</h3>
+		                На все используемые материалы и работы предоставляется гарантия.
+		                <h4>5 лет</h4>
+	                </div>
+
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                	<i class="fa fa-credit-card-alt fa-4x color_icon"></i>
+	                	 <h3>Оплата</h3>
+	               		 Вы выбираете сами как оплачивать свой заказ за наличный расчет или переводом на карту.
+	                </div>
+
+	                <div class="col-md-4 col-sm-4 col-xs-12 col_color">
+	                	<i class="fa fa-rub fa-4x color_icon"></i>
+	                    <h3>И главное - выгодная цена</h3>
+	               		 За доступную цену вы получите отличное качество.
+	                </div>
+	            </div>
             </div>
+            
             <div class="news"></div>
             <div class="rowpad row"></div>
             <div class="row ">
